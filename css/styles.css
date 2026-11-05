@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+body {
+  font-family: "Black Ops One", system-ui;
+  background-color: #4f3222;
+  color: #4f3222;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* nav {
+  
+} */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* nav ul li {
+  width: 100%;
+} */
+
+nav a {
+  color: #bbab9b;
+}
+
+nav a:hover {
+  color: #4f7775;
+}
+
+nav a:visited {
+  color: #bbab9b;
+}
+
+h1 {
+  color: #bbab9b;
+}
+
+article {
+  float: right;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #d4ac6e;
+  padding: 1rem;
+  border-radius: 5px;
+  flex: 0 0 calc(100% - 1rem);
+  width: 100%;
+}
+
+.card p {
+  color: #4f3222;
+}
+
+img {
+  height: 300px;
+}
+
+p {
+  color: #bbab9b;
+}
+
+.italic {
+  font-style: italic;
+}
+
+a {
+  color: #343434;
+}
+
+a:hover {
+  color: #4f7775;
+}
+
+a:active {
+  color: #fff9f0;
+}
+
+a:visited {
+  color: #243447;
+}
+
+@media (min-width: 550px) {
+  .card {
+    flex: 0 0 calc((100% - 5rem) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  body {
+    text-align: center;
+  }
+  article ul {
+    text-align: left;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    flex: 0 0 calc((100% - 3rem) / 4);
+  }
+}
